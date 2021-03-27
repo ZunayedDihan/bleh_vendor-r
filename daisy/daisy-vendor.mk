@@ -117,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/daisy/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib/hw/camera.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8953.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-external.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib/libMiWatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMiWatermark.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXMFD_AgeGender.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib/lib_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lowlight.so \
@@ -1876,7 +1877,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/daisy/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
-    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/daisy/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so
 
 PRODUCT_PACKAGES += \
     FingerprintExtensionService
