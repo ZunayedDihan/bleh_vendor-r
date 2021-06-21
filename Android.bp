@@ -62,6 +62,23 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.fm@1.0",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
 android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
@@ -77,6 +94,17 @@ android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "FingerprintExtensionService",
+	owner: "xiaomi",
+	apk: "proprietary/vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -206,12 +234,5 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "chargeonlymode",
-	owner: "xiaomi",
-	srcs: ["proprietary/bin/chargeonlymode"],
-	prefer: true,
 }
 
